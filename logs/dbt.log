@@ -1,0 +1,141 @@
+2021-02-20 11:20:34.730143 (MainThread): Running with dbt=0.19.0
+2021-02-20 11:20:35.161724 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/mguevarra/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-02-20 11:20:35.163405 (MainThread): Tracking: tracking
+2021-02-20 11:20:35.177696 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bc27f4f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bd1f09220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bc27a1580>]}
+2021-02-20 11:20:35.204414 (MainThread): Partial parsing not enabled
+2021-02-20 11:20:35.206080 (MainThread): Parsing macros/etc.sql
+2021-02-20 11:20:35.210909 (MainThread): Parsing macros/adapters.sql
+2021-02-20 11:20:35.235865 (MainThread): Parsing macros/catalog.sql
+2021-02-20 11:20:35.245367 (MainThread): Parsing macros/materializations/table.sql
+2021-02-20 11:20:35.256884 (MainThread): Parsing macros/materializations/view.sql
+2021-02-20 11:20:35.260934 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-02-20 11:20:35.263603 (MainThread): Parsing macros/materializations/seed.sql
+2021-02-20 11:20:35.267497 (MainThread): Parsing macros/materializations/incremental.sql
+2021-02-20 11:20:35.281649 (MainThread): Parsing macros/materializations/copy.sql
+2021-02-20 11:20:35.288509 (MainThread): Parsing macros/core.sql
+2021-02-20 11:20:35.295146 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-02-20 11:20:35.297617 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-02-20 11:20:35.301190 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-02-20 11:20:35.303697 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-02-20 11:20:35.306032 (MainThread): Parsing macros/materializations/helpers.sql
+2021-02-20 11:20:35.316083 (MainThread): Parsing macros/materializations/table/table.sql
+2021-02-20 11:20:35.324267 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-02-20 11:20:35.327118 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-02-20 11:20:35.334900 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-02-20 11:20:35.352196 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-02-20 11:20:35.378707 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-02-20 11:20:35.417128 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-02-20 11:20:35.420050 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-02-20 11:20:35.442150 (MainThread): Parsing macros/materializations/view/view.sql
+2021-02-20 11:20:35.449594 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-02-20 11:20:35.457047 (MainThread): Parsing macros/etc/datetime.sql
+2021-02-20 11:20:35.468585 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-02-20 11:20:35.470472 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-02-20 11:20:35.472977 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-02-20 11:20:35.475734 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-02-20 11:20:35.478213 (MainThread): Parsing macros/etc/query.sql
+2021-02-20 11:20:35.479847 (MainThread): Parsing macros/adapters/common.sql
+2021-02-20 11:20:35.536511 (MainThread): Partial parsing not enabled
+2021-02-20 11:20:35.633006 (MainThread): Acquiring new bigquery connection "model.demo_dbt.my_first_dbt_model".
+2021-02-20 11:20:35.655185 (MainThread): Acquiring new bigquery connection "model.demo_dbt.my_second_dbt_model".
+2021-02-20 11:20:35.870106 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7c89c3f4-5ff0-4a25-8c11-bf35dfb90bbb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff2fce80>]}
+2021-02-20 11:20:35.906463 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 156 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-02-20 11:20:35.907875 (MainThread): 
+2021-02-20 11:20:35.908377 (MainThread): Acquiring new bigquery connection "master".
+2021-02-20 11:20:35.911669 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_scg-udp-dw-dev".
+2021-02-20 11:20:35.912174 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-02-20 11:20:41.679615 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_scg-udp-dw-dev_mguevarra".
+2021-02-20 11:20:41.680306 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2021-02-20 11:20:41.695694 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2021-02-20 11:20:42.370808 (MainThread): 19:20:42 | Concurrency: 10 threads (target='dev')
+2021-02-20 11:20:42.371397 (MainThread): 19:20:42 | 
+2021-02-20 11:20:42.382355 (Thread-1): Began running node model.demo_dbt.my_first_dbt_model
+2021-02-20 11:20:42.389012 (Thread-1): 19:20:42 | 1 of 2 START table model mguevarra.my_first_dbt_model................ [RUN]
+2021-02-20 11:20:42.390320 (Thread-1): Acquiring new bigquery connection "model.demo_dbt.my_first_dbt_model".
+2021-02-20 11:20:42.390824 (Thread-1): Compiling model.demo_dbt.my_first_dbt_model
+2021-02-20 11:20:42.431105 (Thread-1): Writing injected SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-02-20 11:20:42.431628 (Thread-1): finished collecting timing info
+2021-02-20 11:20:42.477819 (Thread-1): Writing runtime SQL for node "model.demo_dbt.my_first_dbt_model"
+2021-02-20 11:20:42.478473 (Thread-1): Opening a new connection, currently in state closed
+2021-02-20 11:20:42.485533 (Thread-1): On model.demo_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "scg-udp-dw-dev", "target_name": "dev", "node_id": "model.demo_dbt.my_first_dbt_model"} */
+
+
+  create or replace table `scg-udp-dw-dev`.`mguevarra`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2021-02-20 11:20:45.319882 (Thread-1): finished collecting timing info
+2021-02-20 11:20:45.322299 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c89c3f4-5ff0-4a25-8c11-bf35dfb90bbb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff3dd3d0>]}
+2021-02-20 11:20:45.326248 (Thread-1): 19:20:45 | 1 of 2 OK created table model mguevarra.my_first_dbt_model........... [CREATE TABLE (2.0 rows, 0.0 Bytes processed) in 2.93s]
+2021-02-20 11:20:45.326864 (Thread-1): Finished running node model.demo_dbt.my_first_dbt_model
+2021-02-20 11:20:45.328326 (Thread-3): Began running node model.demo_dbt.my_second_dbt_model
+2021-02-20 11:20:45.330808 (Thread-3): 19:20:45 | 2 of 2 START view model mguevarra.my_second_dbt_model................ [RUN]
+2021-02-20 11:20:45.331563 (Thread-3): Acquiring new bigquery connection "model.demo_dbt.my_second_dbt_model".
+2021-02-20 11:20:45.331817 (Thread-3): Compiling model.demo_dbt.my_second_dbt_model
+2021-02-20 11:20:45.344592 (Thread-3): Writing injected SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-02-20 11:20:45.345167 (Thread-3): finished collecting timing info
+2021-02-20 11:20:45.368983 (Thread-3): Writing runtime SQL for node "model.demo_dbt.my_second_dbt_model"
+2021-02-20 11:20:45.369395 (Thread-3): Opening a new connection, currently in state init
+2021-02-20 11:20:45.376857 (Thread-3): On model.demo_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.19.0", "profile_name": "scg-udp-dw-dev", "target_name": "dev", "node_id": "model.demo_dbt.my_second_dbt_model"} */
+
+
+  create or replace view `scg-udp-dw-dev`.`mguevarra`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `scg-udp-dw-dev`.`mguevarra`.`my_first_dbt_model`
+where id = 1;
+
+
+2021-02-20 11:20:47.188281 (Thread-3): finished collecting timing info
+2021-02-20 11:20:47.189279 (Thread-3): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7c89c3f4-5ff0-4a25-8c11-bf35dfb90bbb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff3a3910>]}
+2021-02-20 11:20:47.190889 (Thread-3): 19:20:47 | 2 of 2 OK created view model mguevarra.my_second_dbt_model........... [OK in 1.86s]
+2021-02-20 11:20:47.191125 (Thread-3): Finished running node model.demo_dbt.my_second_dbt_model
+2021-02-20 11:20:47.193008 (MainThread): Acquiring new bigquery connection "master".
+2021-02-20 11:20:47.193459 (MainThread): 19:20:47 | 
+2021-02-20 11:20:47.193652 (MainThread): 19:20:47 | Finished running 1 table model, 1 view model in 11.29s.
+2021-02-20 11:20:47.193817 (MainThread): Connection 'master' was properly closed.
+2021-02-20 11:20:47.193920 (MainThread): Connection 'model.demo_dbt.my_first_dbt_model' was properly closed.
+2021-02-20 11:20:47.194023 (MainThread): Connection 'model.demo_dbt.my_second_dbt_model' was properly closed.
+2021-02-20 11:20:47.223735 (MainThread): unclosed <socket.socket fd=7, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 43938), raddr=('172.217.24.202', 443)>
+2021-02-20 11:20:47.224119 (MainThread): unclosed <socket.socket fd=8, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 36088), raddr=('172.217.26.138', 443)>
+2021-02-20 11:20:47.224512 (MainThread): unclosed <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 36092), raddr=('172.217.26.138', 443)>
+2021-02-20 11:20:47.224757 (MainThread): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 43942), raddr=('172.217.24.202', 443)>
+2021-02-20 11:20:47.225050 (MainThread): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 43946), raddr=('172.217.24.202', 443)>
+2021-02-20 11:20:47.225279 (MainThread): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.100.110', 36096), raddr=('172.217.26.138', 443)>
+2021-02-20 11:20:47.261323 (MainThread): 
+2021-02-20 11:20:47.263537 (MainThread): Completed successfully
+2021-02-20 11:20:47.265434 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2021-02-20 11:20:47.267723 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff304220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff3c6b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f4bff3c8340>]}
+2021-02-20 11:20:47.269666 (MainThread): Flushing usage events
